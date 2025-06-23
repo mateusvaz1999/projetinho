@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css"> 
+  <title>Perfil</title>
+</head>
+<body>
+  <h1>Cadastro / Login</h1>
+
+  <div id="authSection">
+    <!-- Cadastro -->
+    <h2>Crie sua conta</h2>
+    <form id="formSignup">
+      <input id="suNome" placeholder="Nome" required />
+      <input id="suEmail" type="email" placeholder="Email (somente Gmail)" required />
+      <input id="suSenha" type="password" placeholder="Senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <!-- Login -->
+    <h2>Entrar</h2>
+    <form id="formLogin">
+      <input id="loNome" placeholder="Nome" required />
+      <input id="loSenha" type="password" placeholder="Senha" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Perfil -->
+  <section id="perfilSection">
+    <h2 id="perfilTitulo"></h2>
+    <form id="formImagem">
+      <input type="file" name="imagem" accept="image/*" required />
+      <button type="submit">Enviar / Atualizar Imagem</button>
+    </form>
+    <button id="btnDeletar">Excluir Imagem</button>
+    <button id="btnLogout" style="margin-top: 1rem; background:#f44336;">Sair</button>
+    <img id="imagemPerfil" src="" alt="" />
+  </section>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
